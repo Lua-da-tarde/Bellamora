@@ -3,6 +3,14 @@
     background-color: #b8abdb;
 }
 
+.pezinho{
+    width: 100%;
+    background-color: #bebebe;
+    border-top: 2px solid #9b9b9b;
+    text-align: center;
+    padding: 20px;
+}
+
 /*Margens*/
 .mgT-3{
     margin-top: 3%;
