@@ -12,11 +12,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
     <style type="text/css">
         .texto-roxo {
             color: #48487f;
         }
-
+    
         .texto-branco {
             color: white;
         }
@@ -46,7 +47,8 @@
                 </ul>
             </div>-->
             <!--<div>
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav m
+.mgT-3{auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="mailto:espacobellamora@gmail.com?subject = Feedback&body 
                             = Message"><i class="bi bi-envelope-fill texto-roxo"></i>
@@ -69,73 +71,80 @@
     <!--Fim NavBar-->
 
     <!--Offcanvas navbar-->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <aside class="offcanvas offcanvas-start fs-4" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <div>
-                <ul type="square">
-                    <li><a href="#quemsomos" style="color:black">Quem somos?</a></li>
-                    <li><a href="#galeria" style="color:black">Galeria</a></li>
-                    <li><a href="#mapa" style="color:black">Nosso mapa</a></li>
-                </ul>
-            </div>
+            <ul type="square">
+                <li><a href="#quemsomos" class="text-black">Quem somos?</a></li>
+                <li><a href="#galeria" class="text-black">Galeria</a></li>
+                <li><a href="#mapa" class="text-black">Nosso mapa</a></li>
+            </ul>
         </div>
-    </div>
+    </aside>
     <!--Fim offcanvas navbar-->
 
-    <!--Parte principal-->
-    <a name="contato">
-    <h1 class="text-center mgT-3 texto-roxo">Espaço Bellamora</h1></a>
-    <p class="text-center">Estética, Saúde & Bem-Estar<br>
-        Segundas à Sábados das 8:00 - 18:00 horas</p>
-    <div class="container mgB-3">
-        <div class="col-md-6 d-grid gap-2 col-6 mx-auto">
-            <!--<a class=" btn" href="https://getbootstrap.com/docs/5.2/components/buttons/" role="button" target="_blank"
-                style="font-size: x-large;background-color: #48487f;color: white;">Entre em Contato!</a>-->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            style="font-size: x-large;background-color: #48487f;color: white;">Entre em Contato!</button>
+    <main name="contato">
+        <h1 class="text-center mgT-3 texto-roxo">Espaço Bellamora</h1>
+
+        <p class="text-center">
+            Estética, Saúde & Bem-Estar
+            <br>
+            Segundas à Sábados das 8:00 - 18:00 horas
+        </p>
+        <div class="container mgB-3">
+            <div class="col-md-6 d-grid gap-2 col-6 mx-auto">
+                <!--<a class=" btn" href="https://getbootstrap.com/docs/5.2/components/buttons/" role="button" target="_blank"
+                    style="font-size: x-large;background-color: #48487f;color: white;">Entre em Contato!</a>-->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    style="font-size: x-large;background-color: #48487f;color: white;">Entre em Contato!</button>
+            </div>
         </div>
-    </div>
-    <!--Fim parte principal-->
+    </main>
 
     <!--Comeco modal-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Meios de Contato</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                <div class="col">
-                    <h1 class="display-6"><i class="bi bi-whatsapp"></i> Whatsapp</h1>
-                    <p class="mgL-3">(19) 98198-5775 <a href="https://web.whatsapp.com/send?phone=19981985775" target="_blank">
-                    <i class="bi bi-box-arrow-up-right"></i></a></p>
-                    <h1 class="display-6"><i class="bi bi-envelope"></i> E-mail</h1>
-                    <p class="mgL-3">espacobellamora@gmail.com <a aria-current="page" 
-                        href="mailto:espacobellamora@gmail.com?subject = Feedback&body = Message"><i class="bi bi-box-arrow-up-right"></i></a></p>
-                    <h1 class="display-6"><i class="bi bi-geo-fill"></i> Endereço</h1>
-                    <p class="mgL-3">Rua Américo de Moura, 189 - Jardim Dom Bosco - <br> Campinas, SP - Brasil <a href="https://www.google.com/maps/dir//Espa%C3%A7o+Bellamora/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c8c5fe3ee6ea2f:0x775f60342485abe5!2m2!1d-47.0533171!2d-22.8795689"
-                        target="_blank"><i class="bi bi-box-arrow-up-right"></i></a></p>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Meios de Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col ms-auto">
-                    <h1 class="display-6">Horário de Funcionamento</h1>
-                    <ul class="list-unstyled">
-                        <li class="mgL-3">Segunda-feira: 8:00 - 18:00</li>
-                        <li class="mgL-3">Terça-feira: 8:00 - 18:00</li>
-                        <li class="mgL-3">Quarta-feira: 8:00 - 18:00</li>
-                        <li class="mgL-3">Quinta-feira: 8:00 - 18:00</li>
-                        <li class="mgL-3">Sexta-feira: 8:00 - 18:00</li>
-                        <li class="mgL-3">Sábado: 8:00 - 18:00</li>
-                        <li class="mgL-3">Domingo: FECHADO </li>
-                    </ul>    
-                </div></div>
-            </div>  
-            <!--<div class="modal-body col">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="display-6"><i class="bi bi-whatsapp"></i> Whatsapp</h1>
+                            <p class="mgL-3">(19) 98198-5775 <a href="https://web.whatsapp.com/send?phone=19981985775"
+                                    target="_blank">
+                                    <i class="bi bi-box-arrow-up-right"></i></a></p>
+                            <h1 class="display-6"><i class="bi bi-envelope"></i> E-mail</h1>
+                            <p class="mgL-3">espacobellamora@gmail.com <a aria-current="page"
+                                    href="mailto:espacobellamora@gmail.com?subject = Feedback&body = Message"><i
+                                        class="bi bi-box-arrow-up-right"></i></a></p>
+                            <h1 class="display-6"><i class="bi bi-geo-fill"></i> Endereço</h1>
+                            <p class="mgL-3">Rua Américo de Moura, 189 - Jardim Dom Bosco - <br> Campinas, SP - Brasil
+                                <a href="https://www.google.com/maps/dir//Espa%C3%A7o+Bellamora/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c8c5fe3ee6ea2f:0x775f60342485abe5!2m2!1d-47.0533171!2d-22.8795689"
+                                    target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                            </p>
+                        </div>
+                        <div class="col ms-auto">
+                            <h1 class="display-6">Horário de Funcionamento</h1>
+                            <ul class="list-unstyled">
+                                <li class="mgL-3">Segunda-feira: 8:00 - 18:00</li>
+                                <li class="mgL-3">Terça-feira: 8:00 - 18:00</li>
+                                <li class="mgL-3">Quarta-feira: 8:00 - 18:00</li>
+                                <li class="mgL-3">Quinta-feira: 8:00 - 18:00</li>
+                                <li class="mgL-3">Sexta-feira: 8:00 - 18:00</li>
+                                <li class="mgL-3">Sábado: 8:00 - 18:00</li>
+                                <li class="mgL-3">Domingo: FECHADO </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="modal-body col">
                 <h1 class="display-6">Horário de Funcionamento</h1>
                 <ul class="list-unstyled">
                     <li class="mgL-3">Segunda-feira: 8:00 - 18:00</li>
@@ -147,9 +156,9 @@
                     <li class="mgL-3">Domingo: FECHADO </li>
                 </ul>
             </div>-->
-          </div>
+            </div>
         </div>
-      </div>
+    </div>
     <!--Fim modal-->
 
     <!--Imagem main-->
@@ -159,35 +168,39 @@
     <!--Fim imagem main-->
 
     <!--Container Quem Somos-->
-    <a name="quemsomos"></a>
-    <div class="roxao container mgB-3" style="border: 4px solid #eae7e2;">
-        <br>
-        <div class="col-md-2 mgL-42">
-            <hr class="border border-dark">
-        </div>
-        <h1 class="display-4 text-center mgB-3">Quem Somos</h1></a>
-        <ul class="list-unstyled mgL-6 mgB-3 mgR-6"><li>O Espaço Bellamora é um lugar pensado com carinho do começo ao fim, para lhe trazer as
-            melhores experiências!</li>
-            <ul type="circle">
-            <li> <u>Tratamentos estéticos e terapêuticos</u> para seu bem-estar físico e mental;</li>
-            <li> <u>Cursos e workshops</u> orientados para sua realização pessoal/profissional;</li>
-            <li> Programa de <u>mentoria</u> para maior treinamento de profissionais na área.</li></ul><br>
+    <section name="quemsomos">
+        <div class="roxao container mgB-3" style="border: 4px solid #eae7e2;">
+            <br>
+            <hr>
 
-            <li> Bellamora é um espaço pensado e cuidado pela <u>Eliomara Sachinelli</u>, esteticista e terapeuta corporal formada em Ed. Física pela
-             PUC-Campinas com mais de 20 anos de experiência.
-            <span class="fw-semibold">Nossa missão é proporcionar o melhor para você!</span></li>
-        <br>
-    </div>
+            <h1 class="display-4 text-center mgB-3">Quem Somos</h1>
+            <ul class="list-unstyled mgL-6 mgB-3 mgR-6">
+                <li>
+                    O Espaço Bellamora é um lugar pensado com carinho do começo ao fim, para lhe trazer as
+                    melhores experiências!
+                </li>
+                <ul type="circle">
+                    <li> <u>Tratamentos estéticos e terapêuticos</u> para seu bem-estar físico e mental;</li>
+                    <li> <u>Cursos e workshops</u> orientados para sua realização pessoal/profissional;</li>
+                    <li> Programa de <u>mentoria</u> para maior treinamento de profissionais na área.</li>
+                </ul>
+                <br>
+
+                <li> Bellamora é um espaço pensado e cuidado pela <u>Eliomara Sachinelli</u>, esteticista e terapeuta
+                    corporal formada em Ed. Física pela
+                    PUC-Campinas com mais de 20 anos de experiência.
+                    <span class="fw-semibold">Nossa missão é proporcionar o melhor para você!</span>
+                </li>
+                <br>
+        </div>
+    </section>
     <!--Fim Container Quem Somos-->
 
+    <hr>
+
     <!--Galeria-->
-    <div class=" container mgB-3 col-md-8">
-        <div class="col-md-2 mgL-42">
-            <hr class="border border-dark">
-        </div>
-        <a name="galeria">
-            <h1 class="display-4 text-center">Galeria</h1>
-        </a>
+    <section name="galeria" class="container-fluid col-md-8">
+        <h1 class="display-4 text-center">Galeria</h1> <!--Evita colocar mais de um h1-->
         <br>
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
@@ -206,27 +219,27 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
                     aria-label="Slide 7"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner ">
                 <div class="carousel-item active">
-                    <img src="imagens/bella2.jpeg" class="d-block w-100" alt="Bellamora de longe" height="100%">
+                    <img src="imagens/bella2.jpeg" class="d-block w-100" alt="Bellamora de longe">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/bella1.jpeg" class="d-block w-100" alt="Fachada da Bellamora" height="100%">
+                    <img src="imagens/bella1.jpeg" class="d-block w-100" alt="Fachada da Bellamora">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/bella3.jpeg" class="d-block w-100" alt="Sacada da Bellamora" height="100%">
+                    <img src="imagens/bella3.jpeg" class="d-block w-100" alt="Sacada da Bellamora">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/bella4.jpeg" class="d-block w-100" alt="Interior da Bellamora" height="100%">
+                    <img src="imagens/bella4.jpeg" class="d-block w-100" alt="Interior da Bellamora">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/bella5.jpg" class="d-block w-100" alt="Sala de atendimento" height="100%">
+                    <img src="imagens/bella5.jpg" class="d-block w-100" alt="Sala de atendimento">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/bella6.jpeg" class="d-block w-100" alt="Sala de atendimento" height="100%">
+                    <img src="imagens/bella6.jpeg" class="d-block w-100" alt="Sala de atendimento">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/bella7.jpeg" class="d-block w-100" alt="Escada" height="100%">
+                    <img src="imagens/bella7.jpeg" class="d-block w-100" alt="Escada">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -241,14 +254,13 @@
             </button>
         </div>
         <br>
-    </div>
+    </section>
     <!--Fim Galeria-->
+
+    <hr>
 
     <!--Mapa Bellamora-->
     <div class="container mgB-3">
-        <div class="col-md-2 mgL-42">
-            <hr class="border border-dark">
-        </div>
         <a name="mapa">
             <h1 class="display-4 text-center">Mapa</h1>
         </a><br>
@@ -256,41 +268,64 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.915926085465!2d-47.055505784488226!3d-22.8795639426535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c5fe3ee6ea2f%3A0x775f60342485abe5!2sBellamora%20Est%C3%A9tica%20Sa%C3%BAde%20%26%20Bem%20estar!5e0!3m2!1spt-BR!2sbr!4v1673048778537!5m2!1spt-BR!2sbr"
             width="100%" height="450" style="border:2px solid #eae7e2;" allowfullscreen="true" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div><br>
+    </div>
+
+    <br>
     <!--Fim mapa-->
 
     <!--Footer de Contato-->
-    <div class="container-fluid pezinho">
+    <footer class="container-fluid">
         <div class="row">
             <ul class="list-inline">
-                <li class="list-inline-item"><a  class="text-decoration-none" aria-current="page" target="_blank" href="mailto:espacobellamora@gmail.com?subject = Feedback&body 
-                    = Message"><img src="imagens/emailicon.png" height="30px"></a></li>
-                <li class="list-inline-item"><a class="text-decoration-none" href="tel:98198-5775" target="_blank"><img src="imagens/telefoneicon.png" 
-                    height="30px"></a></li>
-                <li class="list-inline-item"><a class="text-decoration-none" target="_blank" href="https://www.google.com/maps/dir//Espa%C3%A7o+Bellamora/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c8c5fe3ee6ea2f:0x775f60342485abe5!2m2!1d-47.0533171!2d-22.8795689">
-                    <img src="imagens/mapsicon.png" height="30px"></a></li>
-                <li class="list-inline-item"><a  class="text-decoration-none" href="https://web.whatsapp.com/send?phone=19981985775" 
-                    target="_blank"><img src="imagens/whatsappicon.png" height="30px"></a></li>
-                <li class="list-inline-item"><a class="text=decoration-none" target="_blank" href="https://www.instagram.com/espacobellamora/">
-                    <img src="imagens/instagramicon.png" height="30px"></a></li>
+                <li class="list-inline-item">
+                    <a class="text-decoration-none" aria-current="page" target="_blank" href="mailto:espacobellamora@gmail.com?subject = Feedback&body = Message">
+                        <img src="imagens/emailicon.png" height="30px">
+                    </a>
+                </li>
+                <li class="list-inline-item"><a class="text-decoration-none" href="tel:98198-5775" target="_blank"><img
+                            src="imagens/telefoneicon.png" height="30px"></a></li>
+                <li class="list-inline-item">
+                    <a class="text-decoration-none" target="_blank" href="https://www.google.com/maps/dir//Espa%C3%A7o+Bellamora/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c8c5fe3ee6ea2f:0x775f60342485abe5!2m2!1d-47.0533171!2d-22.8795689">
+                        <img src="imagens/mapsicon.png" height="30px">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-decoration-none" href="https://web.whatsapp.com/send?phone=19981985775" target="_blank">
+                        <img src="imagens/whatsappicon.png" height="30px">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text=decoration-none" target="_blank" href="https://www.instagram.com/espacobellamora/">
+                        <img src="imagens/instagramicon.png" height="30px">
+                    </a>
+                </li>
             </ul>
         </div>
+
         <div class="row">
             <div class="col">
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a class="text-decoration-none" href="#contato"><span style="color: black;">Contato</span></a></li>
+                    <li class="list-inline-item">
+                        <a class="text-decoration-none text-black" href="#contato">Contato</a>
+                    </li>
                     <li class="list-inline-item">◦</li>
-                    <li class="list-inline-item"><a class="text-decoration-none" href="#quemsomos"><span style="color: black;"> Quem Somos</span></a></li>
+                    <li class="list-inline-item">
+                        <a class="text-decoration-none text-black" href="#quemsomos">Quem Somos</a>
+                    </li>
                 </ul>
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a class="text-decoration-none" href="#galeria"><span style="color: black;">Galeria</span></a></li>
+                    <li class="list-inline-item">
+                        <a class="text-decoration-none text-black" href="#galeria">Galeria</a>
+                    </li>
                     <li class="list-inline-item">◦</li>
-                    <li class="list-inline-item"><a class="text-decoration-none" href="#mapa"><span style="color: black;"> Mapa</span></a></li>
+                    <li class="list-inline-item">
+                        <a class="text-decoration-none text-black" href="#mapa">Mapa</a>
+                    </li>
                 </ul>
                 <!--<img src="imagens/bella.png" height="80px">-->
             </div>
         </div>
-    </div>
+    </footer>
     <!--Fim Footer de Contato-->
 
     <!--Javascript-->

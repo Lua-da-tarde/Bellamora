@@ -1,9 +1,37 @@
 /*Classes*/
-.roxao{
+.roxao {
     background-color: #b8abdb;
 }
 
-.pezinho{
+.carousel .carousel-item {
+    max-height: 450px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    max-height: 450px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 30vw;
+    text-align: center;
+}
+
+.center, hr {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer {
     width: 100%;
     background-color: #bebebe;
     border-top: 2px solid #9b9b9b;
@@ -32,10 +60,6 @@
     margin-left: 6%;
 }
 
-.mgL-42{
-    margin-left: 42%;
-}
-
-.mgR-6{
+.mgR-6{ 
     margin-right: 6%;
 }
